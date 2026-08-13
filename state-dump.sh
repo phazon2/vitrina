@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Vitrina — estado desplegado en un comando. Solo curl + grep.
 set -uo pipefail
-APP="https://vitrina.vercel.app"
+APP="https://vitrina-blond.vercel.app"
 OUT="vitrina-state.md"
 CB="cb=$(date +%s)"
 {

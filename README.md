@@ -51,8 +51,8 @@ Las fotos se procesan en el momento y no se almacenan.
 Auditable desde afuera:
 
 ```bash
-curl -s "https://vitrina.vercel.app/api/health"
-curl -s "https://vitrina.vercel.app/api/health?full=1"
+curl -s "https://vitrina-blond.vercel.app/api/health"
+curl -s "https://vitrina-blond.vercel.app/api/health?full=1"
 ```
 
 ## Reuso declarado
