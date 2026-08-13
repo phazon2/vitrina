@@ -1,19 +1,19 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0f1115;
-  --card: #1a1d24;
-  --text: #f2f3f5;
-  --muted: #9aa1ad;
-  --accent: #ffb03a;   /* completo mustard */
-  --accent-2: #4f8cff;
-  --ok: #3ecf72;
-  --mid: #ffd23a;
+  --bg: #1a1210;
+  --card: #261915;
+  --text: #fff6f0;
+  --muted: #c4a294;
+  --accent: #ff7a3d;   /* completo mustard */
+  --accent-2: #ffd166;
+  --ok: #5fd68a;
+  --mid: #ffd166;
   --bad: #ff5d5d;
-  --radius: 14px;
+  --radius: 22px;
 }
 
-html, body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
+html, body { background: var(--bg); color: var(--text); font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif; line-height: 1.5; }
 
 main { max-width: 560px; margin: 0 auto; padding: 24px 16px 80px; }
 
@@ -106,3 +106,13 @@ footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 0
   h1, h2 { color: #111; }
   a { color: inherit; text-decoration: none; }
 }
+
+
+/* ---- Identidad visual de vitrina ---- */
+h1 { font-size: 2.3rem; font-weight: 900; line-height: 1.05; }
+h2 { font-weight: 800; }
+.card { border: 2px solid #3a2620; }
+.btn { border-radius: 999px; font-size: 1.15rem; padding: 17px; font-weight: 800; }
+.pitch { font-size: 1.1rem; }
+.dia { border-bottom: none; margin-bottom: 6px; background: rgba(255,122,61,0.05); border-radius: 14px; padding: 12px; }
+.nivel { border-radius: 8px; }
