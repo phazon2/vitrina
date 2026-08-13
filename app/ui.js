@@ -267,8 +267,14 @@ export default function ProductoUi({ p }) {
         </>
       )}
 
+      {/* El pie afirmaba SIEMPRE que un agente de QA reviso el resultado. Cuando
+          el QA se salta por presupuesto de tiempo eso es falso, y era falso en
+          la cara del cliente. Ahora la afirmacion depende de lo que realmente paso. */}
       <footer className="no-print">
-        {p.nombre} · operado por agentes de IA · cada resultado revisado por un agente de QA
+        {p.nombre} · operado por agentes de IA ·{" "}
+        {result && result.qa && result.qa.skipped
+          ? "este resultado no alcanzo a pasar por el agente de QA"
+          : "cada resultado revisado por un agente de QA"}
       </footer>
     </main>
   );
