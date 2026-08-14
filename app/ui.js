@@ -67,40 +67,6 @@ export default function ProductoUi({ p }) {
   return (
     <main>
       <h1 className="no-print">{p.tagline}</h1>
-      <p className="pitch no-print">{p.subtitulo}</p>
-      <p className="claim no-print">{p.claim}</p>
-      <p className="urgencia no-print">{p.privacidad}</p>
-
-      {packMode && result && (
-        <>
-          <div className="pack-header">
-            <h1>{p.nombre} — tu plan de {result.pasos || 14} días</h1>
-            <p>{p.categoria} · preparado a partir de tu propio documento</p>
-          </div>
-          {result.full === false && (
-            <div className="error no-print">
-              <strong>Esto es la muestra, no el pack.</strong>{" "}
-              {result.packKeyConfigurada
-                ? "La clave del link no es válida: revisa el parámetro key."
-                : "Falta configurar PACK_KEY en Vercel."}
-            </div>
-          )}
-          {result.full && (result.ingles || []).length > 0 && (
-            <div className="aviso no-print">
-              <strong>Hay texto en inglés en el pack.</strong> Se detectó:{" "}
-              {result.ingles.join(", ")}. Vuelve a generarlo antes de mandarlo.
-            </div>
-          )}
-          {result.full && result.completo === false && (
-            <div className="error no-print">
-              <strong>Pack incompleto — no lo mandes así.</strong> Volvieron{" "}
-              {result.pasos} de 14 pasos y {result.totalDrills} de 2 artefactos.
-              Vuelve a generarlo.
-            </div>
-          )}
-        </>
-      )}
-
       {!result && (
         <form className="card no-print" onSubmit={onSubmit}>
           <div className="tabs">
@@ -133,6 +99,40 @@ export default function ProductoUi({ p }) {
           </button>
           {error && <div className="error">{error}</div>}
         </form>
+      )}
+
+      <p className="pitch no-print">{p.subtitulo}</p>
+      <p className="claim no-print">{p.claim}</p>
+      <p className="urgencia no-print">{p.privacidad}</p>
+
+      {packMode && result && (
+        <>
+          <div className="pack-header">
+            <h1>{p.nombre} — tu plan de {result.pasos || 14} días</h1>
+            <p>{p.categoria} · preparado a partir de tu propio documento</p>
+          </div>
+          {result.full === false && (
+            <div className="error no-print">
+              <strong>Esto es la muestra, no el pack.</strong>{" "}
+              {result.packKeyConfigurada
+                ? "La clave del link no es válida: revisa el parámetro key."
+                : "Falta configurar PACK_KEY en Vercel."}
+            </div>
+          )}
+          {result.full && (result.ingles || []).length > 0 && (
+            <div className="aviso no-print">
+              <strong>Hay texto en inglés en el pack.</strong> Se detectó:{" "}
+              {result.ingles.join(", ")}. Vuelve a generarlo antes de mandarlo.
+            </div>
+          )}
+          {result.full && result.completo === false && (
+            <div className="error no-print">
+              <strong>Pack incompleto — no lo mandes así.</strong> Volvieron{" "}
+              {result.pasos} de 14 pasos y {result.totalDrills} de 2 artefactos.
+              Vuelve a generarlo.
+            </div>
+          )}
+        </>
       )}
 
       {loading && <div className="loading">La IA está leyendo y armando tu plan… (~30 segundos)</div>}
