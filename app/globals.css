@@ -116,3 +116,5 @@ h2 { font-weight: 800; }
 .pitch { font-size: 1.1rem; }
 .dia { border-bottom: none; margin-bottom: 6px; background: rgba(255,122,61,0.05); border-radius: 14px; padding: 12px; }
 .nivel { border-radius: 8px; }
+
+.claim { color: var(--text); font-size: 0.95rem; line-height: 1.45; margin-bottom: 14px; padding: 12px 14px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--accent-2); border-radius: var(--radius); }

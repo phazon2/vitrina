@@ -68,6 +68,7 @@ export default function ProductoUi({ p }) {
     <main>
       <h1 className="no-print">{p.tagline}</h1>
       <p className="pitch no-print">{p.subtitulo}</p>
+      <p className="claim no-print">{p.claim}</p>
       <p className="urgencia no-print">{p.privacidad}</p>
 
       {packMode && result && (
@@ -155,7 +156,7 @@ export default function ProductoUi({ p }) {
           </div>
 
           <div className="card">
-            <h2 style={{ marginTop: 0 }}>Tu plan de 14 días</h2>
+            <h2 style={{ marginTop: 0 }}>{p.labels?.plan || "Tu plan de 14 días"}</h2>
             {(packMode ? result.ruta || [] : (result.ruta || []).slice(0, 5)).map((r) => (
               <div className="dia" key={r.dia}>
                 <div className="n">DÍA {r.dia}</div>
@@ -178,7 +179,7 @@ export default function ProductoUi({ p }) {
           </div>
 
           <div className="card">
-            <h2 style={{ marginTop: 0 }}>Lo que te queda listo</h2>
+            <h2 style={{ marginTop: 0 }}>{p.labels?.artefactos || "Lo que te queda listo"}</h2>
             {(packMode ? result.drills || [] : (result.drills || []).slice(0, 1)).map((d, i) => (
               <div className="drill" key={i}>
                 <div style={{ color: "var(--accent)", fontSize: "0.8rem", fontWeight: 700 }}>{d.eje}</div>

@@ -1,6 +1,19 @@
 # Vitrina
 
-**Una foto de tu mercadería se convierte en tu catálogo.**
+**Tu vitrina la ve el vecino que pasa. No el que compra por el teléfono.**
+
+## La afirmación estructural
+
+**Un almacén de barrio no está fuera de las plataformas por no querer: está fuera porque nadie transcribe su inventario a la ficha estructurada que esas plataformas exigen. Vitrina convierte una foto en esa ficha.**
+
+La barrera es de formato, no de tecnología: las plataformas exigen una ficha estructurada por producto y el almacenero no tiene quien se la escriba. Ninguna plataforma va a pagar por digitalizar a un local que todavía no le vende.
+
+**Para quién es la salida:** el distribuidor o la app que decide si te carga en su catálogo. No para quien sube el documento. Ese es el
+movimiento: la categoría es la misma que la de otros, el destinatario no.
+
+## Competencia, nombrada
+
+Rappi Turbo, Cornershop y PedidosYa tienen equipos de onboarding para cadenas, no para almacenes de barrio. Nuestra ficha sale en su formato: somos su capa de captación, no su competencia.
 
 Sube una foto de lo que vendes y recibe el catálogo listo para mandar por WhatsApp, con precios sugeridos y publicaciones escritas.
 

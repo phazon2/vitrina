@@ -15,6 +15,9 @@ export default function Page() {
     privacidad: PRODUCTO.privacidad,
     mpLink: PRODUCTO.mpLink || null,
     categoria: PRODUCTO.categoria,
+    claim: PRODUCTO.claim,
+    destinatario: PRODUCTO.destinatario,
+    labels: PRODUCTO.labels,
   };
   return <Ui p={safe} />;
 }
